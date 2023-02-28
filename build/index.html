@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Audio store</title>
     <link rel="stylesheet" href="./css//style.css" />
   </head>
   <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
     <header class="sticky top-0 z-10 bg-gray-800 text-white">
       <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
         <h1 class="text-3xl font-medium">
-          <a href="#hero">Header</a>
+          <a href="#hero">The Audio Store</a>
         </h1>
         <div>
           <button
@@ -90,14 +90,52 @@
                         &#8212;Zahra,    
                         </figcaption>
                 </figure>
+                <figure class="my-12">
+                    <blockquote class="bg-gray-800 dark:bg-black pl-14 pr-8 py-12 rounded-3xl relative">
+                        <p class="text-2xl sm:text-3xl text-left mt-2 text-white dark:text-slate-400 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2 after:content-['\201D'] after:font-serif after:absolute after:-bottom-20 after:right-0 after:text-9xl after:text-white after:opacity-25 after:transform after:-translate-x-2 after:-translate-y-2">
+                            I've never been a big headphone person, but after trying out a pair from this store I'm hooked. The sound quality is amazing and they are so comfortable to wear. I'll definitely be back for more!    
+                        </p>
+                        
+                    </blockquote>
+                    <figcaption class="italic text-xl sm:text-2xl text-right mt-2 text-slate-500 dark:text-slate-400">
+                        &#8212;Elon Musk,    
+                        </figcaption>
+                </figure>
                 </section>
                 <hr class="mx-auto bg-black dark:bg-white w-1/2">
-                <section id="contact" class="p-6 my-12">
+                <section id="contact" class="p-6 my-12 scroll-mt-16">
                     <h2 class="text-4xl font-bold text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">
                         Contact us
                     </h2>
+                    <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required minlength="3" maxlength="60" placeholder="Your Subject" class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"/>
+                    <label for="message">Message:</label>
+                    <textarea name="message" cols="30" rows="10" id="message" placeholder="Your Message" required  class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solid border-slate-900 dark:border-none"></textarea>
+                    <button class="bg-gray-700 hover:bg-gray-600 active:bg-gray-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">Submit</button>
+                </form>
                     </section>
-                    <hr class="mx-auto bg-black dark:bg-white w-1/2">
+                    <!-- <hr class="mx-auto bg-black dark:bg-white w-1/2  "> -->
     </main>
+    <footer class="bg-gray-700 text-white text-xl" id="footer">
+        <section class="max-w-4xl mx-auto p-4 flex flex-col sm:flex-row sm:justify-between">
+            <address>
+                <h2>The Audio Store, Inc.</h2>
+                555 Astro Way<br>
+                Fairfield, New Jersey 12345-5555<br>
+                Email: <a href="mailto:inquiries@audiostore.com">Inquires@AudioStore.com</a><br>
+                Phone: <a href="tel:+15555555555">(555) 555-5555</a>
+            </address>  
+            <nav class="hidden md:flex flex-col gap-2" aria-label="footer">
+                <a href="#products" class="hover:opacity-90">Our Products</a>
+                <a href="#testimonials" class="hover:opacity-90">Testimonials</a>
+                <a href="#contact" class="hover:opacity-90">Contact Us</a>
+            </nav>
+            <div class="flex flex-col sm:gap-2">
+                <p class="text-right">Copyright &copy; <span id="year">2022</span></p>
+                <p class="text-right">All Rights Reserved</p>
+            </div>  
+        </section>
+    </footer>
   </body>
 </html>
